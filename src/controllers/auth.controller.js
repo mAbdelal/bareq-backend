@@ -76,7 +76,7 @@ async function login(req, res, next) {
 
         const baseCookieOptions = {
             secure: isHttps && !isLocalhost,
-            sameSite: 'none',
+            sameSite: isLocalhost ? 'lax' : 'none',
         };
 
         res.cookie('accessToken', accessToken, {
