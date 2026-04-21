@@ -47,7 +47,7 @@ bareq/
 
 
 
-## 🔒 Security Features
+## Security Features
 
 - JWT-based authentication
 - Password hashing with bcrypt
